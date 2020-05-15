@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab_3</string>
+    <string name="website">Go to website</string>
+    <string name="dial">Dial</string>
+    <string name="contact">Get Contact</string>
+    <string name="hint">Phone number or web address</string>
+</resources>
