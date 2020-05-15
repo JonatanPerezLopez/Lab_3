@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if(!url.startsWith("http://")&& !url.startsWith("https://")){
                     url = "https://" + url;
                 }
-                intent.putExtra("url", url);
+                intent.setData(Uri.parse(url));
                 startActivity(intent);
                 break;
             case R.id.button_dial:

@@ -11,7 +11,7 @@ public class BrowserActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_browser);
-        String url = this.getIntent().getStringExtra("url");
+        String url = this.getIntent().getDataString();
         WebView webView= findViewById(R.id.webView);
         webView.setWebChromeClient(new WebChromeClient());
         webView.loadUrl(url);
